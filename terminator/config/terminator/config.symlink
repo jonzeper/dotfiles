@@ -1,9 +1,9 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
 [keybindings]
-  split_horiz = <Primary><Shift>Down
-  close_term = <Primary>w
-  split_vert = <Primary><Shift>Right
+  split_vert = <Ctrl><Shift>Right
+  close_term = <Ctrl>w
+  split_horiz = <Ctrl><Shift>Down
 [profiles]
   [[default]]
     background_darkness = 1.04
