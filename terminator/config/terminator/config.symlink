@@ -1,12 +1,16 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
 [keybindings]
-  split_vert = <Ctrl><Shift>Right
   close_term = <Ctrl>w
+  split_vert = <Ctrl><Shift>Right
   split_horiz = <Ctrl><Shift>Down
+  go_up = <Ctrl>Up
+  go_down = <Ctrl>Down
+  go_left = <Ctrl>Left
+  go_right = <Ctrl>Right
 [profiles]
   [[default]]
-    background_darkness = 1.04
+    background_darkness = 1
     use_system_font = False
     font = Consolas 11
     scrollback_infinite = True
