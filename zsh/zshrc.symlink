@@ -29,6 +29,7 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
+source $HOME/.rvm/scripts/rvm
 
 # Add Dotfiles bin path
 PATH=$PATH:$HOME/.dotfiles/bin
