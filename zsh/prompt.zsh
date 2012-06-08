@@ -36,7 +36,7 @@ need_push () {
   then
     echo " "
   else
-    echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
+    echo "%{$fg_bold[magenta]%}!%{$reset_color%} "
   fi
 }
 
@@ -78,7 +78,7 @@ username() {
 
 export PROMPT=$'\n$(username) in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
-  export RPROMPT="$(rb_prompt)"
+  export RPROMPT="%D{%l:%M:%S %P}"
 }
 
 precmd() {
