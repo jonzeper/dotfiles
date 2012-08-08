@@ -36,5 +36,13 @@ source $HOME/.rvm/scripts/rvm
 # Add Dotfiles bin path
 PATH=$PATH:$HOME/.dotfiles/bin
 
+# Z Script
+# https://github.com/rupa/z/
+
+. $HOME/z/z.sh
+function precmd () {
+  _z --add "$(pwd -P)"
+}
+
 # Set APP_ENV for development
 APP_ENV=jon
