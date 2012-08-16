@@ -30,11 +30,15 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 PATH=$PATH:/opt/local/bin
 
 # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
-source $HOME/.rvm/scripts/rvm
+# PATH=$PATH:$HOME/.rvm/bin
+# source $HOME/.rvm/scripts/rvm
 
 # Add Dotfiles bin path
 PATH=$PATH:$HOME/.dotfiles/bin
+
+# Add rbenv
+PATH=$PATH:$HOME/.rbenv/bin
+eval "$(rbenv init -)"
 
 # Z Script
 # https://github.com/rupa/z/
