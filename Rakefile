@@ -32,9 +32,6 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
-
-  # Set up sublime
-  `$ZSH/sublime/setup`
 end
 
 task :uninstall do
