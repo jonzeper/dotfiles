@@ -15,3 +15,5 @@ alias gcm='git commit -v -m'
 alias gpom='git pull origin master'
 alias gpm='git push origin master'
 alias gph='git push heroku master'
+
+alias gbd='git branch -d'
