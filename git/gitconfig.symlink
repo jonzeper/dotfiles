@@ -5,6 +5,7 @@
 	name = Jon Zepernick
 	email = jonzeper@gmail.com
 [alias]
+  co = checkout
   la = "!git config -l | grep alias | cut -c 7-"
   url = config --local --get-regexp remote\\.\\.\\*\\.url
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate

@@ -12,5 +12,6 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gcm='git commit -v -m'
 
+alias gpom='git pull origin master'
 alias gpm='git push origin master'
 alias gph='git push heroku master'
