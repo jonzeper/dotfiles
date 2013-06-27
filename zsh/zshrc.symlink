@@ -50,3 +50,8 @@ function precmd () {
 
 # Set APP_ENV for development
 APP_ENV=jon
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/Applications/Vagrant/bin:$PATH"
+
