@@ -27,7 +27,7 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 # plugins=(git)
 # source $ZSH/oh-my-zsh.sh
 
-PATH=$PATH:/opt/local/bin
+PATH=/usr/local/bin:$PATH:/opt/local/bin
 
 # Add RVM to PATH for scripting
 # PATH=$PATH:$HOME/.rvm/bin
