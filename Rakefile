@@ -32,6 +32,18 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
+
+  # Sublime
+  subl_package_dir = "$HOME/Library/Application Support/Sublime Text 3/Packages"
+
+  # Back it up
+  puts "Back up Sublime user prefs? [y/n]" unless backup_all
+  if backup_all || STDIN.gets.chomp == 'y'
+    `mv "#{subl_package_dir}/User" "#{subl_package_dir}/User.backup"`
+  end
+
+  # Link it up
+  `ln -s "$HOME/.dotfiles/sublime/User" "#{subl_package_dir}/User"`
 end
 
 task :uninstall do
