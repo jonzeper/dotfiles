@@ -13,7 +13,11 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gcm='git commit -v -m'
 
 alias gpom='git pull origin master'
+alias gprom='git pull --rebase origin master'
 alias gpm='git push origin master'
 alias gph='git push heroku master'
 
 alias gbd='git branch -d'
+
+# Delete all merged branches
+alias gbdall='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
