@@ -28,6 +28,7 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 # source $ZSH/oh-my-zsh.sh
 
 PATH=/usr/local/bin:$PATH:/opt/local/bin
+PATH=$PATH:/usr/local/share/npm/bin
 
 # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/.rvm/bin
