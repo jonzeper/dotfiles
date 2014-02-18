@@ -21,3 +21,5 @@ alias gbd='git branch -d'
 
 # Delete all merged branches
 alias gbdall='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
+alias gA='git add -A'
