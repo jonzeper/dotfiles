@@ -14,6 +14,7 @@ alias gcm='git commit -v -m'
 
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
+alias gfrom='git fetch && git rebase -i origin/master'
 alias gpm='git push origin master'
 alias gph='git push heroku master'
 
