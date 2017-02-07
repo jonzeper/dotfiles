@@ -76,7 +76,7 @@ username() {
   echo "%{$fg[yellow]%}%n%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(username) in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n%D{%H:%M:%S} $(username) in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%D{%l:%M:%S %P}"
 }
