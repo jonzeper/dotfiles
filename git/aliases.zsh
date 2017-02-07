@@ -22,8 +22,14 @@ alias gph='git push heroku master'
 gup () {
   git fetch && git checkout $1 && git reset --hard origin/$1
 }
+
+# gbom - git branch off master
+# usage: gbom branchname SHA
+# Creates a new branch off of latest master with the additional commit specified
+# by the SHA. Pushes the new branch up to origin
 gbom () {
-  gup master;
+  git checkout master;
+  git pull origin master;
   git checkout -b $1;
   git cherry-pick $2;
   git push origin $1 -u;
