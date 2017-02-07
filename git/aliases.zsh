@@ -13,6 +13,8 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gcm='git commit -v -m'
 
+alias recent-branches='git branch --sort=-committerdate | head -n 8'
+
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
 alias gfrom='git fetch && git rebase -i origin/master'
