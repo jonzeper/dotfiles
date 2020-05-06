@@ -57,3 +57,6 @@ APP_ENV=jon
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Vagrant/bin:$PATH"
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
