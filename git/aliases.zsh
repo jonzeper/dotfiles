@@ -14,7 +14,18 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gcm='git commit -v -m'
 alias gcp='git cherry-pick'
 
-alias recent-branches='git branch --sort=-committerdate | head -n 8'
+list-migrations () {
+  git diff --name-only $1 lib scripts | grep migrations | awk '{print}' ORS=' && bundle exec rails runner ' | rev | cut -c 29- | rev
+}
+
+recent-branches () {
+  if [[ -z $1 ]]; then
+    branch_count=8
+  else
+    branch_count=$1
+  fi
+  git branch --sort=-committerdate | head -n ${branch_count}
+}
 
 alias gpom='git pull origin master'
 alias gprom='git pull --rebase origin master'
@@ -46,3 +57,6 @@ alias gbd='git branch -d'
 alias gbdall='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 alias gA='git add -A'
+
+# Not git
+alias bes='bundle exec spring'
