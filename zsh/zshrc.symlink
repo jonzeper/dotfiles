@@ -57,7 +57,3 @@ APP_ENV=jon
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/Applications/Vagrant/bin:$PATH"
 
-export CNE_DB_IP=33.33.33.11
-export CNE_PS_IP=33.33.33.10
-export CNE_VP_IP=33.33.33.20
-export CNE_AP_IP=33.33.33.30
